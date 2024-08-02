@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
-const tinyUrlRouter = require('./routes/tinyUrl/tinyUrlRouter')
+const shortUrlRouter = require('./routes/shortUrl/shortUrlRouter')
 
 app.use(express.json())
-app.use(tinyUrlRouter)
+app.use(shortUrlRouter)
 
 module.exports = app
